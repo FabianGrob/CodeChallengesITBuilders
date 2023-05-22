@@ -95,23 +95,10 @@ public class UniquePathsTest {
     }
 
     @Test
-    public void testUniquePaths_30x30() {
-        Instant start = Instant.now();
-        UniquePaths uniquePaths = new UniquePaths();
-        long result = uniquePaths.uniquePaths(20000, 20000);
-        Instant finish = Instant.now();
-        long timeElapsed = Duration.between(start, finish).toSeconds();
-        boolean timeout = timeElapsed <= 1;
-        System.out.println(timeElapsed);
-
-        assertTrue(timeout);
-    }
-
-    @Test
     public void testUniquePaths_timeout() {
         Instant start = Instant.now();
         UniquePaths uniquePaths = new UniquePaths();
-        long result = uniquePaths.uniquePaths2(20000, 20000);
+        long result = uniquePaths.uniquePaths(20000, 20000);
         long expected = 2399309444331282944L;
 
         Instant finish = Instant.now();
