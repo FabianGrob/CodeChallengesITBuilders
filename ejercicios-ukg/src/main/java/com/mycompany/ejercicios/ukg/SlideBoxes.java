@@ -13,9 +13,7 @@ import java.util.Arrays;
 public class SlideBoxes {
 
     public static int[][] slide(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            Arrays.sort(matrix[i]);
-        }
+        //TODO
      
         return matrix;
     }

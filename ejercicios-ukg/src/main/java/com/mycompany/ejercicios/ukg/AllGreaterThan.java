@@ -12,20 +12,7 @@ public class AllGreaterThan {
 
     public static boolean AllGreaterThan(int[] a, int[] b) {
         //TODO
-        int minA = Integer.MAX_VALUE;
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] < minA) {
-                minA = a[i];
-            }
-        }
-        int maxB = Integer.MIN_VALUE;
-        for (int i = 0; i < b.length; i++) {
-            if (b[i] > maxB) {
-                maxB = b[i];
-            }
-        }
-
-        return minA > maxB;
+        return false;
     }
 
 }
