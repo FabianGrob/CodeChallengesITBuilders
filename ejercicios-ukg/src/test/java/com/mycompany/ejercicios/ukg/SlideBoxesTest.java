@@ -4,6 +4,7 @@
  */
 package com.mycompany.ejercicios.ukg;
 
+import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -37,7 +38,6 @@ public class SlideBoxesTest {
      */
     @Test
     public void testSlide1() {
-        System.out.println("slide");
         int[][] matrix = {
             {1, 0, 0, 0},
             {1, 0, 0, 0},
@@ -51,12 +51,11 @@ public class SlideBoxesTest {
             {0, 0, 1, 1},
             {0, 1, 1, 1}
         };
-        assertEquals(result, expected);
+        Assert.assertArrayEquals(result, expected);
     }
 
     @Test
     public void testSlide2() {
-        System.out.println("slide");
         int[][] matrix = {
             {0, 0, 1, 0},
             {1, 0, 1, 0},
@@ -70,12 +69,11 @@ public class SlideBoxesTest {
             {0, 1, 1, 1},
             {1, 1, 1, 1}
         };
-        assertEquals(result, expected);
+        Assert.assertArrayEquals(result, expected);
     }
 
     @Test
     public void testSlide3() {
-        System.out.println("slide");
         int[][] matrix = {
             {0, 0, 0, 0},
             {0, 0, 0, 0},
@@ -89,6 +87,6 @@ public class SlideBoxesTest {
             {0, 0, 0, 0},
             {0, 1, 1, 1}
         };
-        assertEquals(result, expected);
+        Assert.assertArrayEquals(result, expected);
     }
 }
