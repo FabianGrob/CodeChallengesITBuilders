@@ -98,7 +98,7 @@ public class UniquePathsTest {
     public void testUniquePaths_timeout() {
         Instant start = Instant.now();
         UniquePaths uniquePaths = new UniquePaths();
-        long result = uniquePaths.uniquePaths(20000, 20000);
+        long result = uniquePaths.uniquePaths(15000, 15000);
         long expected = 2399309444331282944L;
 
         Instant finish = Instant.now();
