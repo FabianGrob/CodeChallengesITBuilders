@@ -93,12 +93,12 @@ Matrix dimensions:	Results:
 
 -------------------------------------------------------------------------------------------
 
-WeightsAndScale:
+Scale:
 
 El equipo de exploración planetaria extrajo 7 muestras radiactivas de un planeta inhóspito y necesita pesarlas, pero la balanza digital se estropeó. El equipo solo cuenta con una balanza de equilibrio, que consiste en colocar pesos en sus dos platillos y se inclina indicando cual pesa más, o se mantiene en equilibrio si pesan lo mismo.
 El equipo de astronautas solicita desarrollar un software que distinga cuál es la muestra que pesa más de las 7, sabiendo que 6 muestras de 7 pesan exactamente lo mismo y solo una pesa estrictamente más que el resto. Al ser un material radiactivo, los astronautas deben estar lo menos expuestos posible, por lo que el número máximo de pesajes necesarios para determinar el material que pesa más es de 2 usos de la báscula.
-Para implementar el método WeightsAndScale, existe la función auxiliar haveSameWight que recibe 2 ints y devuelve un ENUM que indica si el plato de la izquierda o el de la derecha pesan más, o si pesan lo mismo.
-La implementación de WeightsAndScale debe devolver un int[] de 2 posiciones, en la cual la posición 0 debe indicar en que posición del arreglo que recibimos por parámetros tiene diferente peso, mientras ​​que en la segunda posición del arreglo se debe devolver incluir la variable weightTimes, que indica cuántos pesajes se han realizado.
+Para implementar el método Scale, existe la función auxiliar haveSameWeight que recibe 2 ints y devuelve un ENUM que indica si el plato de la izquierda o el de la derecha pesan más, o si pesan lo mismo.
+La implementación de Scale debe devolver un int[] de 2 posiciones, en la cual la posición 0 debe indicar en que posición del arreglo que recibimos por parámetros tiene diferente peso, mientras ​​que en la segunda posición del arreglo se debe devolver la variable weightTimes, que indica cuántos pesajes se han realizado.
 
 
 The planetary exploration team extracted 7 radioactive samples from an inhospitable planet and needs to weigh them, but the digital scale has broken. The team only has a balance scale, which consists of placing weights on its two pans and tilting indicating which one weighs more, or remains in balance if they weigh the same.
