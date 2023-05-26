@@ -85,5 +85,28 @@ Bonuses:
 
 The space exploration company requested that the algorithm be developed with quadratic complexity, which means that the execution time increases significantly as the size of the data grows.(O(n^2))
 
+Examples:
+Matrix dimensions:	Results:
+2x2		=>	2
+4x4 		=> 	20
+1x10		=>	1
+
 -------------------------------------------------------------------------------------------
 
+WeightsAndScale:
+
+El equipo de exploración planetaria extrajo 7 muestras radiactivas de un planeta inhóspito y necesita pesarlas, pero la balanza digital se estropeó. El equipo solo cuenta con una balanza de equilibrio, que consiste en colocar pesos en sus dos platillos y se inclina indicando cual pesa más, o se mantiene en equilibrio si pesan lo mismo.
+El equipo de astronautas solicita desarrollar un software que distinga cuál es la muestra que pesa más de las 7, sabiendo que 6 muestras de 7 pesan exactamente lo mismo y solo una pesa estrictamente más que el resto. Al ser un material radiactivo, los astronautas deben estar lo menos expuestos posible, por lo que el número máximo de pesajes necesarios para determinar el material que pesa más es de 2 usos de la báscula.
+Para implementar el método WeightsAndScale, existe la función auxiliar haveSameWight que recibe 2 ints y devuelve un ENUM que indica si el plato de la izquierda o el de la derecha pesan más, o si pesan lo mismo.
+La implementación de WeightsAndScale debe devolver un int[] de 2 posiciones, en la cual la posición 0 debe indicar en que posición del arreglo que recibimos por parámetros tiene diferente peso, mientras ​​que en la segunda posición del arreglo se debe devolver incluir la variable weightTimes, que indica cuántos pesajes se han realizado.
+
+
+The planetary exploration team extracted 7 radioactive samples from an inhospitable planet and needs to weigh them, but the digital scale has broken. The team only has a balance scale, which consists of placing weights on its two pans and tilting indicating which one weighs more, or remains in balance if they weigh the same.
+The astronaut team requests to develop software that distinguishes which sample weighs more from the 7, knowing that 6 samples out of 7 weigh exactly the same and only one weighs strictly more than the rest. Being a radioactive material, astronauts must be exposed as little as possible, so the maximum number of weighings necessary to determine the material that weighs the most is 2 uses of the scale.
+To implement the WeightsAndScale method, there is a helper function haveSameWight that recieves 2 ints and returns an ENUM indicating whether the left or right pan weighs more, or the same.
+The implementation of WeightsAndScale must return an int[] of 2 positions, in which position 0 must indicate in which position of the array that we receive by parameters has a different weight, while in the second position of the array it must be returned to include the variable weightTimes , which indicates how many weighings have been carried out.
+
+Examples:	   Results:
+{1,1,1,1,1,1,10} => {6,1}
+{3,1,1,1,1,1,1} => {0,2}
+{1,1,3,1,1,1,1} => {2,2}

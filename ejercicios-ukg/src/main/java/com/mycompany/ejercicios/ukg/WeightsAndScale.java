@@ -13,7 +13,7 @@ public class WeightsAndScale {
 
     public static int weightTimes = 0;
 
-    public static int[] scale(int[] balls) {
+    public static int[] scale(int[] weights) {
         weightTimes = 0;
         //TODO
 
